@@ -1,0 +1,52 @@
+header {
+
+    .top {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+    .button :first-child {
+            background: rgb(53,126,151);
+            padding: 10px;
+            color: $white;
+            border-radius: 5px;
+            border: none;
+            margin-right: 10px;
+        }
+    .button :nth-of-type(2) {
+        background: rgb(133,115,0);
+        padding: 10px;
+        color: $white;
+        border-radius: 5px;
+        border: none;
+        margin-right: 10px;
+    }
+   
+    ul {
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 20px;
+        padding-top: 10px;
+        font-size: 1.2rem;
+
+        &:before {
+            content:"";
+            position: absolute;
+            height: 1px;
+            width: 90%;
+            background: rgb(197, 186, 186);
+            top: 55px;
+
+
+        }
+        li {
+            padding-right: 50px;
+            align-self: start;
+            
+            a{  
+                color: $green;
+            } 
+        }
+    }
+}

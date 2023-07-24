@@ -1,0 +1,72 @@
+@font-face {
+  font-family: opensans;
+  src: url(../fonts/);
+}
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style: none;
+  font-family: opensans, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+header .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+}
+header .button :first-child {
+  background: rgb(53, 126, 151);
+  padding: 10px;
+  color: rgb(235, 235, 235);
+  border-radius: 5px;
+  border: none;
+  margin-right: 10px;
+}
+header .button :nth-of-type(2) {
+  background: rgb(133, 115, 0);
+  padding: 10px;
+  color: rgb(235, 235, 235);
+  border-radius: 5px;
+  border: none;
+  margin-right: 10px;
+}
+header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-left: 20px;
+  padding-top: 10px;
+  font-size: 1.2rem;
+}
+header ul:before {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 90%;
+  background: rgb(197, 186, 186);
+  top: 55px;
+}
+header ul li {
+  padding-right: 50px;
+  -ms-flex-item-align: start;
+      align-self: start;
+}
+header ul li a {
+  color: rgb(38, 135, 61);
+}/*# sourceMappingURL=index.css.map */

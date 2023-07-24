@@ -1,0 +1,22 @@
+@font-face {
+    font-family: opensans;
+    src: url(../fonts/);
+}
+
+$font1: opensans, sans-serif;
+$white:rgb(235,235,235);
+$green:rgb(38,135,61);
+$color1: rgb(31,89,100);
+
+
+*    {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: $font1;
+}
+ a {
+    text-decoration: none;
+ }
+
