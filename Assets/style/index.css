@@ -19,15 +19,15 @@ header .top {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   padding: 10px;
 }
-header .button :first-child {
+header #Tan {
   background: rgb(53, 126, 151);
   padding: 10px;
   color: rgb(235, 235, 235);
@@ -42,6 +42,9 @@ header .button :nth-of-type(2) {
   border-radius: 5px;
   border: none;
   margin-right: 10px;
+}
+header a {
+  color: rgb(235, 235, 235);
 }
 header ul {
   display: -webkit-box;
@@ -60,7 +63,7 @@ header ul:before {
   height: 1px;
   width: 90%;
   background: rgb(197, 186, 186);
-  top: 55px;
+  top: 60px;
 }
 header ul li {
   padding-right: 50px;
@@ -69,4 +72,151 @@ header ul li {
 }
 header ul li a {
   color: rgb(38, 135, 61);
+}
+
+.main {
+  margin-top: 10px;
+}
+
+.banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.banner .left-part {
+  width: 70%;
+  height: 150px;
+}
+.banner .right-part {
+  width: 30%;
+  height: 150px;
+  padding: 20px;
+  background: rgb(38, 135, 61);
+  color: rgb(235, 235, 235);
+}
+.banner .right-part h3 {
+  margin-bottom: 10px;
+}
+.banner .right-part button {
+  margin: 10px;
+  background: rgb(235, 235, 235);
+  padding: 10px;
+  border-radius: 20px;
+  border-style: none;
+  width: 150px;
+}
+.banner .right-part button p {
+  color: rgb(38, 135, 61);
+  font-size: 1rem;
+}
+.banner .right-part button :hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.map {
+  padding: 20px;
+}
+.map .schedule {
+  width: 350px;
+  height: 400px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-areas: "1a 1b" "bi bi" "bou bou" "4a 4b" "5a 5b" "a a";
+}
+.map .schedule #timetable, .map .schedule #itinerary {
+  background: none;
+  border-style: none;
+  color: rgb(38, 135, 61);
+  font-size: 1rem;
+}
+.map .schedule input {
+  grid-area: bi;
+}
+.map .schedule p {
+  grid-area: bou;
+}
+.map .schedule a {
+  grid-area: a;
+}
+
+.news {
+  background: grey;
+  height: 400px;
+}
+.news h3 {
+  text-align: center;
+  padding-top: 10px;
+}
+.news .boxnews {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.news .boxnews .news1 {
+  margin: 20px;
+  width: 200px;
+}
+.news .boxnews .news1 .top-part {
+  height: 100px;
+}
+.news .boxnews .news1 .bottom-part h4 {
+  padding-bottom: 10px;
+}
+.news .boxnews .news1 .bottom-part p {
+  line-height: 22px;
+}
+.news .boxnews .news1 .bottom-part button {
+  padding: 10px;
+  background: rgb(38, 135, 61);
+  color: rgb(235, 235, 235);
+  border-radius: 20px;
+  border-style: none;
+  width: 150px;
+  margin-top: 10px;
+}
+
+footer {
+  background: rgb(38, 135, 61);
+  color: rgb(235, 235, 235);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100px;
+}
+footer ul {
+  width: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 50px;
+}
+footer ul a {
+  color: rgb(235, 235, 235);
+}
+footer .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }/*# sourceMappingURL=index.css.map */

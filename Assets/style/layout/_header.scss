@@ -2,11 +2,11 @@ header {
 
     .top {
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
         padding: 10px;
     }
-    .button :first-child {
+    #Tan {
         //  img src="./Assets/img/logo.png" alt
             background: rgb(53,126,151);
             padding: 10px;
@@ -23,7 +23,9 @@ header {
         border: none;
         margin-right: 10px;
     }
-   
+   a {
+    color: $white;
+   }
     ul {
         display: flex;
         justify-content: flex-start;
@@ -37,7 +39,7 @@ header {
             height: 1px;
             width: 90%;
             background: rgb(197, 186, 186);
-            top: 55px;
+            top: 60px;
 
 
         }
